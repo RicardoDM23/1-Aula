@@ -1,5 +1,6 @@
 /*
 * Ricardo D. Muenchen 10/04/24
+* Teste commit 3
 */
 
 let mensagem = "Sou o Ricardo.";
