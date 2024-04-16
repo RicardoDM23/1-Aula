@@ -1,7 +1,7 @@
 
 /*
 * criar usando switch uma estrutara que recebe um numero rquivalente a um mes e retornar o numero de dias
-
+* Ricardo D. Muenchen 15/04/24
 */
 
 const prompt = require('prompt-sync')();

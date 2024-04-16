@@ -1,6 +1,7 @@
-
-//Install no terminal
-// npm install prompt-sync 
+/*
+* Pronpt - Terminal (npm install prompt-sync )
+* Ricardo D. Muenchen 13/04/24
+*/
 
 const prompt = require('prompt-sync')();
 let teste = prompt("Digite aqui seu nome:");

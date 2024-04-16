@@ -1,5 +1,8 @@
+/*
+* Dados Primitivos
+* Ricardo D. Muenchen 13/04/24
+*/
 
-//Dados Primitivos
 //String (cadeia de caracteres)
     //Declaração
     nomesem = "RicardoSem"; // Não recomendado cria variavel global

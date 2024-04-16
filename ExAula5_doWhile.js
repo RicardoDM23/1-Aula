@@ -1,5 +1,6 @@
 /*
 * Pedir ao usuario para adivinhar um numero entre 1 e 10
+* Ricardo D. Muenchen 15/04/24
 */
 const prompt = require('prompt-sync')();
 const numeroCorreto = Math.floor((Math.random() * 10) + 1 );

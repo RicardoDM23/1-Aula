@@ -1,5 +1,6 @@
 /*
 * Exercicio 4: Calculadora Simples
+* Ricardo D. Muenchen 15/04/24
 */
 
 const prompt = require('prompt-sync')();

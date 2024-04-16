@@ -1,4 +1,8 @@
-//Operadores
+/*
+* Operadores
+* Ricardo D. Muenchen 13/04/24
+*/
+
 let num1 = 10;
 let num2 = 5;
 

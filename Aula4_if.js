@@ -1,5 +1,7 @@
-
-//Estruturas condicionais
+/*
+* Estruturas condicionais
+* Ricardo D. Muenchen 13/04/24
+*/
 
 //condicional simples IF ELSE / SE SENÃO
 const nota = 60;

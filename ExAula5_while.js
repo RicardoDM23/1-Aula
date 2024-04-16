@@ -1,5 +1,6 @@
 /*
 * imprimir todos os multiplos de 5 menores que 100
+* Ricardo D. Muenchen 15/04/24
 */
 
 let i = 5;

@@ -1,9 +1,11 @@
-
-//criar a tabuada usando for
+/*
+* criar a tabuada usando for
+* Ricardo D. Muenchen 15/04/24
+*/
 
 const prompt = require('prompt-sync')();
 
-let multiplicando = Number(prompt("1 - Tabuada do número: ")); 
+let multiplicando = Number(prompt("1 - Tabuada(ate 10) do número: ")); 
 let contador;
 
  // for (variavel; condição; incremento){}

@@ -1,5 +1,6 @@
 /*
 * Exercicio 5: Calculadora Simples com Switch
+* Ricardo D. Muenchen 15/04/24
 */
 
 const prompt = require('prompt-sync')();

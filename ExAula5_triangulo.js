@@ -1,6 +1,6 @@
 /*
 * Ecxercicio 3: Apartir de 3 valor dizer se os 3 numeros formam um triango
-*
+* Ricardo D. Muenchen 15/04/24
 */
 
 const prompt = require('prompt-sync')();
