@@ -17,5 +17,4 @@ let cp = prompt("Digite o comprimento do terreno em metros: ");
 //Chamada da função e passagem de parâmetros
 console.log('O terreno possui ' + calcularAreaTerreno(lg,cp) + ' metros quadrados');
 let resultado = calcularAreaTerreno(lg, cp);
-console.log('O terreno possui ' + resultado + ' metros quadrados')
-    
+console.log('O terreno possui ' + resultado + ' metros quadrados');
