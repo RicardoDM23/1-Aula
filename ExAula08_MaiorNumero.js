@@ -1,5 +1,6 @@
 /*
 * Encontrar o maior numero em um array
+* Ricardo D. Muenchen 20/04/24
 */
 
 let num = [1, 5, 3, 2];

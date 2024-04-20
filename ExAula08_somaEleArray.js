@@ -1,5 +1,6 @@
 /*
 * Somar todos os elementos de um array
+* Ricardo D. Muenchen 20/04/24
 */
 
 let elementos = [1, 2, 3, 4];

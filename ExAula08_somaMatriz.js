@@ -1,5 +1,6 @@
 /*
 * Somar todos os elementos de uma matriz
+* Ricardo D. Muenchen 20/04/24
 */
 
 let base = [];

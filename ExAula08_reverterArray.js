@@ -1,5 +1,6 @@
 /*
 * Reverter um array e apresentar original e modificado
+* Ricardo D. Muenchen 20/04/24
 */
 
 let elementos = [1,4,6,8,2]
