@@ -6,11 +6,11 @@
 const filmes = [
     {titulo: 'Tropa de Elire', genero: 'Ação'},
     {titulo: 'Capitão Fantástico', genero: 'Ação'},
-    {titulo: 'O Poderoso Chefão', genero: 'Crime'},
+    {titulo: 'O Poderoso Chefão', genero: 'Drama'},
     {titulo: 'Clube da Luta', genero: 'Drama'},
     {titulo: 'Oppenheimer', genero: 'Biografia'},
     {titulo: 'High School Musical', genero: 'Musical'},
-    {titulo: 'Barbie', genero: 'Live Action'}
+    {titulo: 'Barbie', genero: 'Comédia'}
 ]
 
 /*
