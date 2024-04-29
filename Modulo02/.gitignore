@@ -1,5 +1,6 @@
-/*  Criar um arquivo .gitignore
-*   o nome dos aquivos no .gitignore não vão ser considerados
-*   quando for feito um commit
-*/
+#  Criar um arquivo .gitignore
+#   o nome dos aquivos no .gitignore não vão ser considerados
+#   quando for feito um commit
+
 aula11.txt
+tempCodeRunnerFile.js
