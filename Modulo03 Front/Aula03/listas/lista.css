@@ -1,0 +1,28 @@
+.listaNaoOrdenada {
+    list-style-type: disc;
+}
+
+nav#menu {
+    border: 3px solid blue;
+    display: block;
+}
+nav#menu ul {
+    list-style-type: none;
+}
+nav#menu li {
+    border: 1px solid red;
+    display: inline-block;
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+}
+nav#menu h1{
+    display: none;
+}
+.lsitaOrdenada {
+
+}
+
+.listaNaoOrdeEmListaOrde {
+
+}

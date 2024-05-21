@@ -1,0 +1,35 @@
+.tabela {
+    border: 2px solid black;
+    border-width: thick;
+    border-spacing: 0px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+th,td {
+    background-color: rgb(200, 140, 255);
+}
+th {
+    border: 3px solid red;
+    border-width: medium;
+    text-align: center;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td {
+    border: 2px solid rgb(173, 82, 82);
+    text-align: justify;
+    border-width: thin;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(8, 0, 92);
+    text-align: center;
+}

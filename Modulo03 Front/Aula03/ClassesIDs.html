@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes e IDs</title>
+    <style type="text/css">
+        #principal {
+            background-color: rgb(95, 143, 220);
+        }
+
+        #img {
+            width: 100%;
+        }
+
+        .cor-paragrafo {
+            color: brown;
+        }
+
+        #destaque {
+            color: red;
+        }
+
+        #topo {
+            border: 3px solid green
+        }
+
+        #conteudo {
+            border: 3px solid black
+        }
+
+        .produtos {
+            font-size: 50px;
+            border: 3px solid yellow;
+        }
+
+        #rodape {
+            background-color: azure;
+        }
+
+        #assinatura{
+            background-color: blueviolet;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited { /* links ja visitados*/
+            color:  white;
+        }
+
+        a:hover { /*Ao passar o mouse*/
+            color: orange;
+            cursor: crosshair;
+        }
+
+        a:active { /* Quando sao clicados*/
+            color:  purple;
+            text-transform: uppercase;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body id="principal">
+    <!-- ID: é um identificador unitario dentro do site -->
+    <!-- Class: Permite manipular diversos componentes do site sob uma mesma classe -->
+    <div id="topo">
+        <img src="img.jpg" id="img">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.google.com">Produtos</a></li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    <div id="Conteudo">
+        <h1>Estilo CSS (Cascading Style Sheets)</h1>
+    
+        <p class="cor-paragrafo">
+            Lorem ipsum dolor <span id="destaque">RIO GRANDE DO SUL</span> sit amet consectetur adipisicing elit. Officiis illum nihil tempore nobis distinctio aliquam, architecto excepturi iusto cum totam consequuntur provident est rem soluta libero id non repellendus? Magnam.
+        </p>
+        <p class="cor-paragrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolorem ratione labore temporibus eaque quis excepturi, commodi nulla debitis, nesciunt accusamus illum hic aperiam quas repudiandae quisquam, ut eum! Magnam?
+        </p>
+        
+        <div class="produtos">
+            Produto 1 com classe
+        </div>
+        <div class="produtos">
+            Produto 2 com classe
+        </div>
+        <div>
+            Produto 3 sem classe
+        </div>
+    </div>
+
+    <div id="rodape">
+        Todos os direitos reservados &copy; <span id="assinatura">Aluno Ricardo</span>
+    </div>
+    
+    
+</body>
+</html>
