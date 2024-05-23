@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatico, relativo, absoluto e fixo</title>
+    <style type="text/css">
+        h1 {
+            position: static;
+            /* static é basicamnete o valor padrão */
+        }
+        p {
+            width: 400px;
+        }
+        #container {
+            background-color: #fff;
+            width: 800px;
+            margin: auto 100px;
+            padding: 10px;
+            position: absolute;
+            border: 3px solid black;
+        }
+        .relative {
+            border: 3px solid red;
+            position: relative;
+            left: 100px;
+        }
+        .absolute {
+            border: 3px solid blue;
+            background-color: #f2f2f2;
+            position: absolute;
+            /* absolute em relação ao pai, 
+            se o pai for static, em relação so body */
+            left: 100px;
+
+        }
+        .fixed {
+            border: 3px solid green;
+            background-color: #f4f4f4;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.teste{lorem}*5 -->
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p class="relative">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore unde a omnis veritatis quos, iste aperiam saepe porro provident blanditiis commodi fugit velit obcaecati. Doloribus iste ipsa minus mollitia esse?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum quisquam eum ea nemo, ex nisi enim vero? Quas ducimus voluptate voluptas ab tenetur perspiciatis mollitia obcaecati, eveniet dolorum nesciunt.
+        </p>
+        <p class="absolute">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cupiditate esse tenetur voluptate nemo vero placeat, maxime quidem accusamus culpa eveniet minus facilis. Autem incidunt pariatur corrupti dolorem sed saepe.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ipsum obcaecati debitis, corrupti tenetur a reprehenderit laboriosam? Accusantium velit esse ducimus cupiditate, iure aut dolores officia. Sint doloremque mollitia voluptates.
+        </p>
+        <p class="fixed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, est. Laboriosam expedita est porro deleniti, doloremque ex nisi perspiciatis omnis quam adipisci repudiandae ducimus eos quisquam laudantium alias dolorem error!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusamus nisi quasi impedit saepe quae rem quia corrupti nihil iure dignissimos alias debitis, similique autem ratione id placeat, obcaecati natus!
+        </p>
+    </div>
+</body>
+</html>
