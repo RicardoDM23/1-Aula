@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+nav{
+    width: 150px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: lightgray;
+}
+
+ul {
+    /* margin: 15px; */
+}
+
+.menuItem a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: black;
+    background-color: lightgray;
+    text-align: center;
+    /* border-radius: 25%; */
+}
+
+.menuItem {
+    list-style: none;   
+}
+
+.menuItem a:hover{
+    background-color: gray;
+}

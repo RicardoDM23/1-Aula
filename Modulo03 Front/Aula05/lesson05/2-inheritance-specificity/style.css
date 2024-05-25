@@ -1,0 +1,50 @@
+/* 
+div {
+    border: 2px solid;
+}
+
+#div01 p {
+    color: red !important
+}
+
+#div01 p {
+    color: blue;
+} 
+*/
+
+/* por padrão em seletores iguais
+ o ultimo sera utilizado 
+ a não ser que o seletor anterior
+ possua !important*/ 
+ 
+* {
+    color: blue;
+}
+
+h1 {
+    color: yellow;
+}
+
+h1#textoPrincipal {
+    color: green;
+}
+
+#textoPrincipal {
+    color:orange;
+}
+
+/* 
+ se um seletor for mais especifico que o outro a regra do mais especificco sera aplicada
+*/
+
+/*
+Ordem crescente de especificação
+A seguinte lista de seletores está incluida na especificação:
+    Seletores Universais
+    Tipo de Seletores
+    Classes seletoras
+    Atributos Seletores
+    Pseudo-classes
+    Seletores ID
+    Estilo Inline
+*/
