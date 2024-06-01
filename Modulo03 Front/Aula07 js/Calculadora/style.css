@@ -1,0 +1,35 @@
+/* Fazer! */
+body {
+    margin: 20px 20px;
+    background-color: rgba(56, 68, 179, 0.2);
+    
+}
+
+.botao{
+    width: 35px;
+    margin: 2px;
+    border: 1px solid;
+    border-radius: 20%;
+    box-shadow: 3px 3px 1px rgb(80, 80, 80);
+    text-align: center;
+}
+
+.resultado {
+    width: 164px;
+    height: 25px;
+    margin: 10px auto 15px auto;
+    text-align: center;
+    background-color: lightgray;
+    color: red;
+    box-shadow: 3px 3px 1px rgb(80, 80, 80)
+    
+}
+
+table {
+    border: 1px solid;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5%;
+    box-shadow: 8px 8px 6px black;
+    padding-bottom: 10px;
+}

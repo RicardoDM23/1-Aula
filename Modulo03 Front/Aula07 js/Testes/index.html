@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo JS</title>
+    <script>
+        // let numero = prompt('Digite um numero: ')
+        // if(numero %2 === 0){
+        //     document.write("<h1> O numero que vc digitou é par</h1>")
+        // } else {
+        //     document.write("<h1> O numero que vc digitou é impar</h1>")
+        // }
+
+        let nome = prompt('Informe o nome: ')
+        let idade = prompt('Informe a idade: ')
+        let valor = 0
+        let qtd = Number(prompt('Quantidade de valores para a média: '))
+        for(let i = 0; i < qtd; i++){
+            let num = Number(prompt('Informe um valor: '))
+            valor += num
+        }
+
+        document.write(`<h2>Nome: ${nome}</h2>`)
+        document.write(`<h2>Idade: ${idade}</h2>`)
+        
+        document.write(`<h2>Quantidade de valores: ${qtd}</h2>`)
+        document.write(`<h2>Valor: ${valor}</h2>`)
+        document.write(`<h2>Media: ${valor/qtd}</h2>`)
+    </script>
+</head>
+<body>
+    
+    <!-- <input 
+        type="text"
+        id="nome"
+        placeholder="placeholder"
+        disabled="disabled"
+        > -->
+
+    <!-- script:src deve sempre ficar no final do body -->
+    <script src="script.js"></script>
+</body>
+<script src=""></script>
+</html>

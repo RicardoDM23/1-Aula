@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo JS</title>
+    <script>
+        function eventoMouse() {
+            document.write('<h4>Evento Aconteceu! Mouse</h4>')
+        }
+
+        function eventoTeclado() {
+            document.write('<h4>Evento Aconteceu! Teclado</h4>')
+        }
+
+        function eventoJanela() {
+            document.write('<h4>Evento Aconteceu! Body</h4>')
+        }
+
+        function eventoForm() {
+            document.write('<h4>Evento Aconteceu! Form</h4>')
+        }
+    </script>
+</head>
+<body>
+<!-- <body onscroll="eventoJanela()"> -->
+<!-- <body onresize="eventoJanela()"> -->
+    
+    <!-- mouse -->
+    <!-- 1 click -->
+    <!-- <div style="background-color: blue; height: 200px; width: 200px;" onclick="eventoMouse()"></div> -->
+    <!-- 2 clicks -->
+    <!-- <div style="background-color: blue; height: 200px; width: 200px;" ondblclick="eventoMouse()"></div>  -->
+    <!-- quando solta o botão dispara o evento-->
+    <!-- <div style="background-color: blue; height: 200px; width: 200px;" onmouseup="eventoMouse()"></div>  -->
+    <!-- quando o cursor esta sobre o elemento -->
+    <!-- <div style="background-color: blue; height: 200px; width: 200px;" onmouseover="eventoMouse()"></div>  -->
+    <!-- quando o cursor esta sai do elemento -->
+    <!-- <div style="background-color: blue; height: 200px; width: 200px;" onmouseout="eventoMouse()"></div>  -->
+
+    <!-- teclado -->
+    <!-- Quando a teclada é liberada -->
+    <!-- <input onkeyup="eventoTeclado()" type="text"> -->
+    <!-- Quando a teclada é precionada -->
+    <!-- <input onkeydown="eventoTeclado()" type="text"> -->
+    <!-- Quando a teclada mantem a tecla precionada ( apenas caracter) -->
+    <!-- <input onkeypress="eventoTeclado()" type="text"> -->
+
+    <!-- Outros -->
+    <!-- Ao mudar a info/valor -->
+    <!-- <select onchange="eventoForm()"> 
+        <option value="1">A</option>
+        <option value="2">B</option>
+    </select> -->
+
+    <!-- Ao selecionar (dar foco) -->
+    <!-- <select onfocus="eventoForm()"> 
+        <option value="1">A</option>
+        <option value="2">B</option>
+    </select> -->
+
+    <!-- Ao sair (perder foco) -->
+    <!-- <select onblur="eventoForm()"> 
+        <option value="1">A</option>
+        <option value="2">B</option>
+    </select> -->
+
+    <!-- script:src deve sempre ficar no final do body -->
+    <script src="script.js">
+    </script>
+</body>
+<script src=""></script>
+</html>
