@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript aplicando CSS</title>
+    <script>
+        function trocarEstilizacao(estilizacao) {
+            // let body = document.getElementById('body')
+            // body.style.backgroundColor = estilizacao
+            document.getElementById('body').style.backgroundColor = estilizacao
+        }
+        function adiciona() {
+            // let idDiv = document.getElementById('idDiv')
+            // idDiv.classList.add('testeDiv')
+            // document.getElementById('idDiv').className ='testeDiv'
+            
+            document.getElementById('idDiv').classList.add('testeDiv')
+        }
+        function remove() {
+            let idDiv = document.getElementById('idDiv')
+            idDiv.classList.remove('testeDiv')
+        }
+    </script>
+    <style>
+        .testeDiv {
+            background-color: blueviolet;
+            width: 300px; height: 100px; 
+            border: 1px solid black;
+            margin: 50px 50px;
+        }
+        button {
+            margin: 2px 5px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <div id="idDiv">
+    <h1 style="text-align: center; color: yellow;">Teste</h1>    
+    </div>
+    <button type="button" onclick="trocarEstilizacao('orange')">Laranja</button>
+    <button type="button" onclick="trocarEstilizacao('white')">Branco</button>
+    <button type="button" onclick="trocarEstilizacao('black')">Preto</button>
+    <button type="button" onclick="trocarEstilizacao('blue')">Azul</button>
+    <button type="button" onclick="trocarEstilizacao('red')">Vermelho</button>
+    <button type="button" onclick="trocarEstilizacao('green')">Verde</button>
+    <p></p>
+    <button type="button" onclick="adiciona()">Adiciona</button>
+    <button type="button" onclick="remove()">Remove</button>
+</body>
+</html>

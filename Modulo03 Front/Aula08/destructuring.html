@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destructuring</title>
+
+    <script>
+        // let filmes = [  'Poderoso Chefao', 
+        //                 'Senhor dos Aneis', 
+        //                 'Harry Potter', 
+        //                 'Platoon', 
+        //                 'Pulp Fiction']
+
+        // // let var1 = filmes[0]
+        // // let var2 = filmes[1]
+
+        // //'Vingadores' é valor padrão caso n tenha valor no indice
+        // //o ,, esta pulando um valor neste caso 'Harry Potter'
+        // //'clube da luta' so ira aparecer caso o indice [4] esteja vazio
+        // let [a, b, , c, d = 'Clube da luta', e = 'Vingadores'] = filmes
+
+        // console.log(a, b, c, d, e)
+
+        // let coisas = [['Abacaxi', 'Maça', 'Hortela'], ['PC', 'Mouse', 'Teclado']]
+
+        // let [ , [,x]] = coisas
+
+        // console.log(x)
+
+        // let produto = {
+        //     nome: 'Bicicleta',
+        //     preco: 1000,
+        //     detalhes: {
+        //         fabricante: 'caloi',
+        //         modelo: 10
+        //     }
+        // }
+
+        // let { nome: n, preco: p} = produto
+        // console.log(n, p)
+
+        // let {nome: t, preco: y, desconto = 5} = produto
+        // console.log(t, y, desconto)
+
+        // let {detalhes: {fabricante: f, modelo}} = produto
+        // console.log(f, modelo)
+
+        let arr = [10, 20, 30, 40, 50]
+
+        function teste([a, b, ,c]) {
+            console.log(a, b, c)
+        }
+
+        teste(arr)
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40,
+            e: 50
+        }
+
+        function teste1({a,b,c,d,e}) {
+            console.log(e)
+        }
+        teste1(obj)
+
+        let [a, ...resto] = arr
+        console.log(resto)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
