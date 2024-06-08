@@ -21,7 +21,7 @@
                 <h3>Lista de livros</h3>
                 <div class="pesquisa">
                     <input type="text"  placeholder="pesquisa">
-                    <button class="btPesquisa">P</button>
+                    <button class="btPesquisa" type="button" onclick="searchTasks()">P</button>
                 </div>
                 
                 <hr>
@@ -37,6 +37,17 @@
                         <button class="excluirBtn">excluir</button>    
                     </li> -->
                 </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Livro</th>
+                            <th scope="col">Cap</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="listTasks"></tbody>
+                </table>
     
             </div>
         </div>
@@ -45,5 +56,6 @@
         <hr>
         <p style="text-align: center;">Desenvolvido por Ricardo &copy;</p>
     </footer>
+    
 </body>
 </html>
