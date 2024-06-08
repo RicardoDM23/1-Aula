@@ -1,0 +1,53 @@
+
+#content {
+    background-color: lightgray;
+    height: 250px;
+    display: flex;
+    /* flex-direction: row;  */
+    /*  row é o valor padrão 
+        row-reverse
+        column
+        column-reverse*/
+
+    /* flex-wrap: wrap; */
+    /*  quebra ou não a linha 
+        nowrap é o padrão*/
+
+    /* justify-content: space-around; */
+    /*  EIXO X
+        flex-start -> esquerda
+        flex-end -> direita
+        space-around -> espaço em volta
+        space-between -> preenche */
+    /* align-items: center; */
+    /* é o justify-content so que no eixo Y */
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: cadetblue;
+    border: 3px solid blue;
+    flex-grow: 0;
+    /* aumenta a capacidade 
+    quanto maior o numero mais aumenta
+    em relação a outros*/
+    flex-shrink: 1;
+    /* capacdidade de redução do item 
+    quanto maior o numero mais diminue 
+    em relação ao outros*/
+    flex-basis: auto;
+    /* tamanho inicial antes da distribuição do espaço restante*/
+
+}
+
+.item1 {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.item2 {
+    flex-basis: 200px;
+    flex-shrink: 20;
+}

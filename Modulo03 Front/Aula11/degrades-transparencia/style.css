@@ -1,0 +1,27 @@
+#box {
+    width: 400px;
+    height: 400px;
+    background: url(Pica-Pau-post.webp);
+    /* color: yellow; */
+}
+
+#box h1 {
+    background: rgb(255, 255, 255, 0.5);
+    /* background: radial-gradient(red, green, yellow); */
+}
+
+
+#box2 {
+    width: 400px;
+    height: 400px;
+    /* background: linear-gradient(0.25turn, blue, white, orange) */
+    /* background: linear-gradient(217deg, blue, white, orange); */
+    /* background: linear-gradient(225deg, hsla(217, 100%, 50%, 1) 0%, hsla(25, 100%, 61%, 1) 43%, hsla(186, 100%, 69%, 1) 100%); */
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+#box2 h1 {
+    /* background: radial-gradient(red, green, yellow); */
+    background: linear-gradient(90deg, hsla(284, 100%, 53%, 1) 0%, hsla(77, 100%, 64%, 1) 100%);
+}
