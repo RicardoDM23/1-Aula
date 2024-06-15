@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmes>
+    <filme id="1">
+        <titulo>Kill Bill</titulo>
+        <resumo>
+            A Noiva (Uma Thurman) é uma perigosa assassina que trabalhava em um grupo, liderado por Bill (David Carradine), composto principalmente por mulheres. Grávida, ela decide escapar dessa vida de violência e decide se casar, mas no dia da cerimônia seus companheiros de trabalho se voltam contra ela, quase a matando.
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Pessoa 1A</ator>
+            <ator>Pessoa 1B</ator>
+            <ator>Pessoa 1C</ator>
+        </elento>
+    </filme>
+
+    <filme id="2">
+        <titulo>A Viagem de Chihiro</titulo>
+        <resumo>
+            A protagonista, Chihiro, é uma jovem garota que está de mudança com seus pais. A caminho da nova casa, eles atravessam um túnel e ficam presos num outro mundo onde coisas estranhas acontecem. Para encontrar uma saída e retornar ao seu mundo humano, ela enfrenta diversos desafios.
+        </resumo>
+        <genero>Animação</genero>
+        <genero>Drama</genero>
+        <elenco>
+            <ator>Pessoa 2A</ator>
+            <ator>Pessoa 2B</ator>
+            <ator>Pessoa 2C</ator>
+        </elento>
+    </filme>
+    
+    <filme id="3">
+        <titulo>Vingadores: Guerra Infinita</titulo>
+        <resumo>
+            Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.
+        </resumo>
+        <genero>Ação</genero>
+        <genero>Aventura</genero>
+        <elenco>
+            <ator>Pessoa 3A</ator>
+            <ator>Pessoa 3B</ator>
+            <ator>Pessoa 3C</ator>
+        </elento>
+    </filme>
+    
+</filmes>
