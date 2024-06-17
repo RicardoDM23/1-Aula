@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators</title>
+
+    <script>
+        // * indica que é uma função do tipó generator
+        // function* myGenerator() {
+            // let i = 0
+            // while(true){
+            //     //retornna o valor passado depois pausa a função
+            //     yield i++
+            // }
+        // }
+
+        function* myGenerator() {
+            yield [1,2,3,4,5]
+        }
+
+        function* myGenerator2() {
+            //percorre a lista envia 1 por vez
+            yield* [1,2,3,4,5]
+        }
+
+        let generator = myGenerator()
+
+        let generatorValue = generator.next() // necessario para 'pegar' o valor
+        console.log(generatorValue)
+        generatorValue = generator.next()
+        console.log(generatorValue)
+
+        let generator2 = myGenerator2()
+
+        let generatorValue2 = generator2.next()
+        console.log(generatorValue2)
+        generatorValue2 = generator2.next()
+        console.log(generatorValue2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
