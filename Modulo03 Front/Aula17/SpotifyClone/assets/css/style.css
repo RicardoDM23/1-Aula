@@ -1,0 +1,183 @@
+/* Geral Inicio */
+html, .sectCarousel, .sectServ {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: url("../imagens/capa.png"), 
+                url("../imagens/ruido.png"), 
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+/* Geral Fim */
+
+/* Navegação Inicio */
+.navegacao {
+    background:rgba(0,0,0,0.6);
+    padding: 1rem 0;
+}
+.logo img {
+    width: 140px;
+}
+.separador {
+    color: #fff; 
+}
+.nav-link:hover {
+    color: #9bf0e1;
+}
+/* Navegação Fim */
+
+/* Texto Inicio */
+h1 {
+    font-weight:900;
+    letter-spacing: -0.05rem;
+    margin-bottom: 50px;
+    color: white;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* Texto Fim */
+
+/* Carousel Inicio */
+.sectCarousel {
+    margin: 5rem auto;
+    margin-top: 10rem;
+}
+#carousel {
+    text-align:center;
+}
+.carousel-item span {
+    text-transform: initial;
+}
+.btn-carousel {
+    color: white;
+    border-radius: 150px;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+.btn-r {
+    background-color: #7c26f8;
+}
+.btn-b{
+    border: 3px solid white;
+}
+/* Carousel Fim */
+
+/* Serviços Inicio */
+.sectServ{
+    padding: 2rem;
+}
+.sectServ .albuns {
+    padding: 0.4rem 0;
+}
+.sectServ h2, h3{
+    color: #7c26f8;
+}
+/* Serviços Fim */
+/* Informações Inicio */
+.info {
+    padding: 2rem;
+}
+.info h3{
+    color: #9bf0e1;
+}
+.info .divImg{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 10rem;
+    width: 90%;
+}
+/* Informações Fim */
+
+/* Footer Inicio */
+footer{
+    position: relative;
+    padding: 3rem 0 1.2rem 0;
+    background-color: #000;
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: #858789;
+    font-size: 0.8rem;
+}
+
+footer .navbar-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a img{
+    margin: 0 1rem;
+}
+/* Footer Fim */
+
+/* Media Inicio */
+@media (max-width:575px){
+    footer .container div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+} 
+
+@media (min-width: 576px) { 
+    .btn-carousel{
+        font-size: 1rem;
+    }
+    
+    footer .container .row div{
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) { 
+    h1{
+        font-size: 3em;
+    }
+
+    .btn-carousel{
+        margin: 0.5rem 0.6rem;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    h1{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px) { 
+    h1{
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1400px) { 
+    h1{
+        font-size: 6em;
+    }
+    .info .divImg{
+        width: 100%;
+    }
+}
+/* Media Fim */
