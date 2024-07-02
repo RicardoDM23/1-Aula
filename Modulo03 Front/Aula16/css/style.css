@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+}
+
+.section {
+    margin: 3rem;
+    border: 1px solid blue;
+}
+
+.divMarg {
+    margin: 0 1rem;
+    border: 1px solid red; 
+}
+
+.wfImg {
+    border: 1px solid black;
+    background: #ccc;
+}
+
+.text {
+    margin: 0 1rem;
+    border: 1px solid green;
+}

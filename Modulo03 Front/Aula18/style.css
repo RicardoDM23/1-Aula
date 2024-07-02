@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #181C1F;
+}
+
+.logo {
+    width: 100px;
+    border: 1px solid;
+    margin-right: 1rem;
+}
+
+.content{
+    margin-left: 1rem;
+    max-width: 550px;
+}
+
+.divNav {
+    margin-top: 1rem;
+}
+
+.nav .active{
+    background: #56E1FE!important;
+}
+.nav-link{
+    background: #272F32!important;
+    color: #fff!important;
+    border: none!important;
+    margin-right: 0.3rem;
+    padding: 1rem;
+}
+.titulo{
+    color: #56E1FE;
+}
+.tab-pane{
+    background: #2C3942!important;
+    color: #fff!important;
+    border: none!important;
+    padding: 1rem;
+}
