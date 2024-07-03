@@ -56,7 +56,7 @@ header p {
 
 #tabs button:hover,
 #tabs button.active {
-    background-color: #2d3949;
+    background-color: #516682;
     border-radius: 0 4px 4px 4px;
     padding: 0.5rem;
 }
