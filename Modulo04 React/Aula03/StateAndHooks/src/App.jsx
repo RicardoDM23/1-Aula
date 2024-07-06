@@ -1,11 +1,14 @@
 import Counter from './compenents/Contador'
 import MirrorText from './compenents/MirrorText'
+import ToDoList from './compenents/ToDoList'
+
 function App() {
 
   return (
     <>
-      <Counter/>
-      <MirrorText/>
+      <Counter />
+      <MirrorText />
+      <ToDoList />
     </>
   )
 }
