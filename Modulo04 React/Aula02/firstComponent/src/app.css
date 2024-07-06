@@ -1,0 +1,13 @@
+body{
+    background: #363636;
+    color: #fefefe;
+}
+
+.logo {
+    width: 140px;
+}
+
+.navegacao {
+    background:rgba(0,0,0,0.6);
+    padding: 1rem 0;
+}
