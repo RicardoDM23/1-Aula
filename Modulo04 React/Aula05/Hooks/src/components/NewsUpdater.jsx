@@ -13,7 +13,7 @@ function NewsUpdater() {
                 const data = await response.json()
 
                 setNews(data.slice(0, 5))
-                //atualizar as noticias de 5 em 5
+                //atualizar as noticias de 5 em 5 aa
 
             } catch (error){
                 console.log('Ligue pro suporte')
