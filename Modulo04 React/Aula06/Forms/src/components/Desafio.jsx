@@ -22,7 +22,6 @@ Campo para Confirmar Senha (obrigatório e deve ser igual ao campo Senha)
         Exibir mensagens de erro abaixo dos campos que não passam nas validações.
         Exibir uma mensagem de sucesso ao final do formulário quando todos os dados forem válidos e o formulário for submetido.
 */
-
 import { useState } from "react";
 
 function Desafio() {
