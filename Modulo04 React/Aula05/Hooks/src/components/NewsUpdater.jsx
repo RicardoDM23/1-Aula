@@ -30,7 +30,6 @@ function NewsUpdater() {
         return () => clearInterval(interval)
     }, [])
 
-
     return (
         <div>
             <h1>Últimas Noticias Simuladas</h1>

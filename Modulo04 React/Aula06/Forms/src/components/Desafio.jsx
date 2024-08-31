@@ -1,6 +1,5 @@
 /*
 Objetivo:
-
 Desenvolver um formulário de registro de usuário que colete informações básicas, como nome, email, senha e confirmação de senha. O formulário deve validar os dados inseridos e exibir mensagens de erro apropriadas quando os dados não forem válidos.
 
 Requisitos do Desafio:
@@ -77,7 +76,6 @@ function Desafio() {
                 <button type="submit">Enviar</button>
             </form>
         </div>
-        
     )
 }
 
