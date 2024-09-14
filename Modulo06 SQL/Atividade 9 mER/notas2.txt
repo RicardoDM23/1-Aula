@@ -48,3 +48,8 @@ inner join ferramentas f
 	on fr.Ferramentas_idFerramentas = f.idFerramentas
 where c.nomeCargo = "Desenvolvedor"
 group by nomeRecurso, nomeCargo, nomeFerramenta, versao
+
+
+select nomeRecurso, concat(e.cidade,' / ',e.estado,' - ',e.rua,' Numero: ',e.numero,' CEP:',e.cep)
+from recursos r
+inner join enderecos e on r.Enderecos_idEnderecos = e.idEnderecos

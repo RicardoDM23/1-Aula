@@ -1,0 +1,51 @@
+-=-=1=-=-
+Select nome from aluno;
+
+-=-=2=-=-
+Select nome, matricula_id from aluno a 
+inner join matricula m 
+on a.aluno_id = m.aluno_id;
+
+-=-=3=-=-
+Select nome from aluno a 
+left join matricula m 
+on a.aluno_id = m.aluno_id
+where m.matricula_id is null;
+
+-=-=4=-=-
+Select count(*) from aluno a 
+left join matricula m 
+on a.aluno_id = m.aluno_id
+where m.turma_id = 30;
+
+-=-=5=-=-
+Select t.horario from aluno a 
+inner join matricula m 
+on a.aluno_id = m.aluno_id
+inner join turma t
+on m.turma_id = t.turma_id
+where a.nome = "Perna Longa";
+
+-=-=6=-=-
+Select a.nome from aluno a 
+inner join matricula m 
+on a.aluno_id = m.aluno_id
+inner join turma t
+on m.turma_id = t.turma_id
+where m.turma_id = 30;
+
+-=-=7=-=-
+Select a.nome from aluno a 
+inner join matricula m 
+on a.aluno_id = m.aluno_id
+inner join turma t
+on m.turma_id = t.turma_id
+where m.turma_id != 30;
+
+-=-=8=-=-
+Select t.nometurma from aluno a 
+inner join matricula m 
+on a.aluno_id = m.aluno_id
+inner join turma t
+on m.turma_id = t.turma_id
+where m.nota_final > 8;
