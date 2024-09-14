@@ -18,6 +18,13 @@ left join matricula m
 on a.aluno_id = m.aluno_id
 where m.turma_id = 30;
 
+ou
+
+Select m.matricula_id from aluno a 
+left join matricula m 
+on a.aluno_id = m.aluno_id
+where m.turma_id = 30;
+
 -=-=5=-=-
 Select t.horario from aluno a 
 inner join matricula m 
