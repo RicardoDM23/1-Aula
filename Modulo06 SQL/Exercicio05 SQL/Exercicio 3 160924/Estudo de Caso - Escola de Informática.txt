@@ -19,3 +19,7 @@ Uma escola de informática deseja manter um controle do seu funcionamento. Os al
 5.1) Alterar o nome de todos os professores para maiúsculo;
 5.2) Colocar o nome de todos os alunos que estão na turma com o maior número de alunos em maiúsculo;
 6) Excluir as ausências dos alunos nas turmas que estes são monitores;
+
+
+
+refazer usando matricula como uma tabela separada de aluno

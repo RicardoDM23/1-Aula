@@ -57,3 +57,18 @@ create table Ausencias(
     foreign key (alunoMatricula) references Alunos(matricula) on delete cascade, 
     idTurma int not null,
     foreign key (idTurma) references Turmas(idTurma) on delete cascade);
+
+
+
+
+v2 usar:
+
+matriculas (
+    idMatricula int not null auto_increment primary key,
+    dataMatricula date not null,
+    faltas int,
+    idAluno int not null,
+    foreign key (idAluno) references Alunos(idAluno) on delete cascade,
+    idTurma int not null,
+    foreign key (idTurma) references Turmas(idTurma) on delete cascade
+)
