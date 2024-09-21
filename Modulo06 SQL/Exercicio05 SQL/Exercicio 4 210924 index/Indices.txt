@@ -1,0 +1,32 @@
+21-09-2024
+
+Funcionam como um sumario de um livro.
+PK é um INDEX
+Geralmente é criado em colunas que são consultadas com frequencia para acelerar a busca de informações.
+
+    Exemplo "Normal":
+CREATE INDEX idx_nome ON alunos(nome);
+
+    Outros Exemplos:
+CREATE FULLTEXT INDEX idx_descricao ON alunos(descricao)
+CREATE SPATIAL INDEX idx_loc ON alunos(loc)
+
+explain select * from alunos
+explain select nome from alunos where nome = "Jaques"
+
+select * from performance_schema.events_statements_history
+order by event_id desc limit 10
+
+create user 'sqluser' identified by 'senha';
+grant all privileges on *.* to 'sqluser';
+
+CREATE USER 'lowuser'@'%' IDENTIFIED BY 'senha';
+GRANT ALL PRIVILEGES ON it_soluctions.* TO 'lowuser'@'%'
+
+
+SHOW GRANTS FOR 'sqluser';
+REVOKE ALL ON *.* FROM 'sqluser';
+flush privileges
+
+drop user 'teste','sqluser','lowuser';
+

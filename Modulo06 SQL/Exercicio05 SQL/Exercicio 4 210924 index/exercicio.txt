@@ -1,0 +1,110 @@
+
+Exercício: Analisando a Performance de Consultas com Índices no MySQL
+
+Objetivo: Compreender a criação de índices e como eles melhoram a performance das consultas em grandes volumes de dados.
+
+Parte 1: Preparação do Ambiente
+
+    Criação da Tabela: Crie uma tabela chamada clientes, que contém uma lista de clientes com dados simulados. Para isso, execute o seguinte script SQL:
+
+    CREATE TABLE clientes (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(100),
+        email VARCHAR(100),
+        telefone VARCHAR(15),
+        cidade VARCHAR(50),
+        data_registro DATE
+    );
+
+Inserção de Dados
+
+Popule a tabela clientes com 100.000 registros simulados. Você pode utilizar um loop para gerar dados fictícios ou usar scripts prontos. Se não tiver ferramentas automáticas para gerar os dados, execute o seguinte SQL para inserir alguns dados de exemplo:
+
+
+INSERT INTO clientes (nome, email, telefone, cidade, data_registro)
+VALUES 
+('João Silva', 'joao.silva@gmail.com', '123456789', 'São Paulo', '2020-01-01'),
+('Maria Souza', 'maria.souza@gmail.com', '987654321', 'Rio de Janeiro', '2020-05-15'),
+('Carlos Pereira', 'carlos.pereira@gmail.com', '123987654', 'Belo Horizonte', '2021-07-20'),
+('Ana Costa', 'ana.costa@gmail.com', '987321654', 'Porto Alegre', '2019-10-12');
+
+Dica: Gere dados adicionais para ter um volume considerável. Se necessário, use uma ferramenta de geração de dados ou um script que insere múltiplos registros.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+DELIMITER $$
+
+CREATE PROCEDURE gerar_clientes()
+BEGIN
+  DECLARE i INT DEFAULT 1;
+  DECLARE nome_base VARCHAR(100);
+  DECLARE email_base VARCHAR(100);
+  DECLARE telefone_base VARCHAR(15);
+  DECLARE cidade_base VARCHAR(50);
+  DECLARE data_registro_base DATE;
+  
+  WHILE i <= 100000 DO
+    SET nome_base = CONCAT('Cliente_', i);
+    SET email_base = CONCAT('cliente', i, '@email.com');
+    SET telefone_base = CONCAT('11', LPAD(i, 9, '0')); -- Gera um telefone com prefixo "11"
+    SET cidade_base = CASE MOD(i, 10)
+                      WHEN 0 THEN 'São Paulo'
+                      WHEN 1 THEN 'Rio de Janeiro'
+                      WHEN 2 THEN 'Belo Horizonte'
+                      WHEN 3 THEN 'Porto Alegre'
+                      WHEN 4 THEN 'Curitiba'
+                      WHEN 5 THEN 'Salvador'
+                      WHEN 6 THEN 'Brasília'
+                      WHEN 7 THEN 'Recife'
+                      WHEN 8 THEN 'Fortaleza'
+                      ELSE 'Manaus'
+                      END;
+    SET data_registro_base = CURDATE() - INTERVAL MOD(i, 365) DAY; -- Define a data de registro como uma data dentro do último ano
+
+    INSERT INTO clientes (nome, email, telefone, cidade, data_registro)
+    VALUES (nome_base, email_base, telefone_base, cidade_base, data_registro_base);
+
+    SET i = i + 1;
+  END WHILE;
+END$$
+
+DELIMITER ;
+
+CALL gerar_clientes();
+
+
+--Fonte chat gpt
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Parte 2: Teste de Performance sem Índices
+
+    Consulta Lenta
+
+    Execute a seguinte consulta para buscar todos os clientes de uma cidade específica. Note o tempo de execução da consulta sem o uso de índices.
+
+SELECT * FROM clientes WHERE cidade = 'São Paulo';
+
+Analisando a Performance
+
+Utilize o comando EXPLAIN para verificar como o MySQL está executando essa consulta e quais otimizações podem ser feitas.
+
+
+EXPLAIN SELECT * FROM clientes WHERE cidade = 'São Paulo';
+
+Pergunta: Qual é o tempo de execução da consulta? O MySQL está utilizando algum índice?
+
+id,     select_type,    table,      partitions, type,   possible_keys,  key,    key_len,    ref,    rows,       filtered,   Extra
+'1',    'SIMPLE',       'clientes', NULL,       'ALL',  NULL,           NULL,   NULL,       NULL,   '99512',    '10.00',    'Using where'
+
+não usa index
+
+criando index para cidade
+CREATE INDEX idx_cidade ON clientes(cidade);
+
+novo resultado
+id,     select_type,    table,      partitions, type,   possible_keys,  key,            key_len,    ref,        rows,       filtered,   Extra
+'1',    'SIMPLE',       'clientes', NULL,       'ref',  'idx_cidade',   'idx_cidade',   '203',      'const',    '18564',    '100.00',   NULL
+
+
+set profiling = 1
